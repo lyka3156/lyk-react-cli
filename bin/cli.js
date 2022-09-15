@@ -8,8 +8,14 @@
 // 检查入口文件是否正常运行
 console.log('lyk-react-cli working ~');
 
+// 插件
 const program = require('commander');
+
+// package.json
 const packageConfig = require('../package.json');
+
+// lib 工具方法
+const create = require('../lib/create.js');
 
 // 1. 创建自定义命令         lyk-cli create app-name -f/--force
 program
@@ -21,7 +27,8 @@ program
 	.option('-f, --force', 'overwrite target directory if it exist')
 	.action((name, options) => {
 		// 打印执行结果  TODO: 在这里做你的事情
-		console.log('name:', name, 'options:', options);
+		// console.log('name:', name, 'options:', options);
+		create(name, options);
 	});
 
 // 2. 配置版本命令信息  lyk-cli -V

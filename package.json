@@ -13,6 +13,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"commander": "^9.4.0"
+		"commander": "^9.4.0",
+		"fs-extra": "^10.1.0"
 	}
 }
