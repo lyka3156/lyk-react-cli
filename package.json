@@ -1,7 +1,7 @@
 {
-	"name": "lyk-react-cli",
-	"version": "1.0.0",
-	"description": "lyk simple react cli",
+	"name": "lyk-cli",
+	"version": "1.0.1",
+	"description": "lyk simple cli",
 	"main": "index.js",
 	"bin": {
 		"lyk-cli": "./bin/cli.js"
@@ -9,11 +9,28 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"files": [
+		"bin",
+		"lib"
+	],
+	"keywords": [
+		"lyk-cli",
+		"lyk",
+		"脚手架"
+	],
+	"author": {
+		"name": "lyk",
+		"email": "1210167160@qq.com"
+	},
+	"license": "MIT",
 	"dependencies": {
+		"axios": "^1.2.6",
+		"chalk": "^4.1.2",
 		"commander": "^9.4.0",
-		"fs-extra": "^10.1.0"
+		"download-git-repo": "^3.0.2",
+		"figlet": "^1.5.2",
+		"fs-extra": "^10.1.0",
+		"inquirer": "^8.0.0",
+		"ora": "^5.4.1"
 	}
 }
